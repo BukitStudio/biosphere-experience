@@ -63,8 +63,20 @@ svg,
 video {
     display: block;
     max-width: 100%;
-    border-radius: var(--radius-m);
+
 }
+
+img,
+picture,
+video {
+    border-radius: var(--radius-m);
+
+}
+
+
+
+
+
 
 input,
 button,
@@ -101,7 +113,9 @@ ul {
     --font-size-h2: 1.6rem;
     --font-size-h3: 1.2rem;
 
-    --font-size-p: .8rem;
+
+    --font-size-p: clamp(1rem, 2.3vw, .8rem);
+    --font-siwe-p-s: .8rem;
     --text-box-trim: 0.45rem;
 
     --fw-light: 200;
@@ -194,7 +208,7 @@ img{
 
 }
 figcaption{
-    font-size: var(--font-size-p);
+    font-size: var( --font-siwe-p-s);
     font-weight: var(--fw-light);
     font-style:var( --fs-italic) ;
 }
@@ -296,6 +310,7 @@ padding-inline: var(--page-margin);
 
 .site-header__logo {
     font-size: .75rem;
+    line-height: .8rem;
     font-weight: var(--fw-bold);
 }
 
