@@ -3,6 +3,7 @@ title: Biosphere Experience
 layout: base.html
 ---
 
+
 <section id="intro">
     <article> 
         <h1>Il existe des technologies et savoir-faire innovants, accessibles à tous et durables pour répondre à nos besoins. </h1> 
@@ -12,13 +13,14 @@ layout: base.html
     </section>
 
 <section id="experience-du-moment">
-    <figure><img src="assets/img/biosphere-experience-ld-dit.png" alt="">
+    <figure><img width="1200px" height="900px" src="assets/img/biosphere-experience-htnd.png" alt="">
         <figcaption>Appartement expérimental à Boulogne-Billancourt | Crédit photo : Alain de Baudus</figcaption>
     </figure>
 
 <article>
 <h2>2024, une biosphère urbaine </h2>
-<p>En 2024, l'équipe s'attaque à un nouveau défi : au sein d'une nouvelle association "BIOSPHERE EXPERIENCE", elle applique la démarche low-tech à un milieu urbain dense, en région parisienne. Pendant 4 mois (de mi-juillet à mi-novembre 2024), un appartement expérimental à Boulogne-Billancourt a servi de laboratoire pour imaginer un mode de vie zéro déchet, divisant par 10 la consommation d'eau, et atteignant les objectifs 2050 de l'ONU en matière de réduction des émissions de gaz à effet de serre, et qui soit à la fois accessible à tous et désirable !</p> 
+<p>En 2024, l'équipe s'attaque à un nouveau défi : au sein d'une nouvelle association "BIOSPHERE EXPERIENCE", elle applique la démarche low-tech à un milieu urbain dense, en région parisienne.</p>
+<p> Pendant 4 mois (de mi-juillet à mi-novembre 2024), un appartement expérimental à Boulogne-Billancourt a servi de laboratoire pour imaginer un mode de vie zéro déchet, divisant par 10 la consommation d'eau, et atteignant les objectifs 2050 de l'ONU en matière de réduction des émissions de gaz à effet de serre, et qui soit à la fois accessible à tous et désirable !</p> 
 
  <p>L'appartement, au coeur d'un écosystème d'une vingtaine d'acteurs de différents domaines : élevage de larves pour le recyclage des déchets organiques, culture de champignons et de plantes pour l'alimentation, production de biogaz pour la cuisine, supermarché participatif, ferme bio, etc. a permis de tester des pratiques prospectives pour réfléchir au futur des villes.</p>
  
@@ -29,14 +31,14 @@ layout: base.html
 </section id="historique biosphere">
 
 <section id="post grid">
-    <h2>L’historique de la biosphère </h2>
+    <h2>L'historique de la biosphère </h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas mollitia aliquid nemo consequatur voluptatibus quo incidunt illo laborum cum? Magnam dolore sunt quis facere at assumenda nisi corporis. Iste.
     </p>
 <div class="post__grid-wrapper">
 
-    {% for post in collections.post reversed %}
+    {% for post in collections.featured reversed %}
     <div class="post__card">
-    <figure> <img class="post__featured-image" src=" {{ post.data.featured }} " alt=""></figure>
+    <figure> <img class="post__featured-image" src=" {{ post.data.img }} " alt="" width="600px" height="450px"></figure>
     <h2 class="post__title"><a href="{{ post.url }}"> {{ post.data.title }}</a></h2>
     <p class="post__decription">{{ post.data.desc }}</p>
     <a href="{{ post.url }}">Explorer</a>
