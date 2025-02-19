@@ -13,17 +13,28 @@ layout: base.html
     </section>
 
 <section class="hero-image">
-    <figure><img width="1200px" height="900px" src="assets/img/biosphere-experience-htnd.png" alt="">
+    <figure><img src="assets/img/biosphere-experience-htnd.png" alt="">
         <figcaption>Appartement expérimental à Boulogne-Billancourt | Crédit photo : Alain de Baudus</figcaption>
     </figure>
 </section>
+
+<section id="programme-biosphere">
+    <article>
+        <h2>Programme Biosphère</h2>
+        <p class="text-hero">
+            Expérimenter un futur durable et désirable dans lequel les humains vivent en symbiose avec les autres espèces vivantes.</p>
+    <p>Au sein d'une nouvelle association « BIOSPHERE EXPERIENCE », nous concevons des habitats-écosystèmes combinant ces innovations low-techs les unes avec les autres.</p>
+ 
+    </article>
+    </section>
+
 
     <section id="programme-biosphere">
         <article>
     <h2>Programme Biosphère</h2>
         <p>Au sein d'une nouvelle association « BIOSPHERE EXPERIENCE », nous concevons des habitats-écosystèmes combinant ces innovations low-techs les unes avec les autres.</p>
             <h3>Notre mission</h3>
-            <p class="text-hero">
+            <p>
             Expérimenter un futur durable et désirable dans lequel les humains vivent en symbiose avec les autres espèces vivantes.</p>
     
         </article>
@@ -38,7 +49,7 @@ layout: base.html
 <p> Pendant 4 mois (de mi-juillet à mi-novembre 2024), un appartement expérimental à Boulogne-Billancourt a servi de laboratoire pour imaginer un mode de vie zéro déchet, divisant par 10 la consommation d'eau, et atteignant les objectifs 2050 de l'ONU en matière de réduction des émissions de gaz à effet de serre, et qui soit à la fois accessible à tous et désirable !</p> 
 
  <p>L'appartement, au coeur d'un écosystème d'une vingtaine d'acteurs de différents domaines : élevage de larves pour le recyclage des déchets organiques, culture de champignons et de plantes pour l'alimentation, production de biogaz pour la cuisine, supermarché participatif, ferme bio, etc. a permis de tester des pratiques prospectives pour réfléchir au futur des villes.</p>
- <div>
+ <div class="buttons-wrapper">
 <button class="button-primary">TUTOS</button>
 <button class="button-primary">Rapport expérimental</button>
 <button class="button-primary">Documentaire</button>
@@ -48,17 +59,17 @@ layout: base.html
 
 </section id="historique">
 
-<section id="post grid">
+<section id="post-grid">
     <h2>Historique</h2>
    
 <div class="post__grid-wrapper">
 
     {% for post in collections.featured reversed %}
     <div class="post__card">
-    <figure> <img class="post__featured-image" src=" {{ post.data.img }} " alt="" width="600px" height="450px"></figure>
-    <h2 class="post__title"><a href="{{ post.url }}"> {{ post.data.title }}</a></h2>
+    <figure> <img class="post__featured-image" src=" {{ post.data.img }} " alt="" ></figure>
+    <h3 class="post__title"><a href="{{ post.url }}"> {{ post.data.title }}</a></h3>
     <p class="post__decription">{{ post.data.desc }}</p>
-    <a href="{{ post.url }}">Explorer</a>
+    <a class="post__link" href="{{ post.url }}">Explorer</a>
   </div>  {% endfor %}
 
 </div>
