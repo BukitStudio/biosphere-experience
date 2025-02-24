@@ -452,7 +452,7 @@ button {
 
 
 .footer__social li {
-
+margin-bottom: .4rem;
     list-style: none;
 }
 
