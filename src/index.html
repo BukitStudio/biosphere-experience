@@ -1,5 +1,5 @@
 ---
-title: Biosphere Experience
+title: BIOSPHERE EXPERIENCE
 layout: base.html
 ---
 
@@ -18,15 +18,7 @@ layout: base.html
     </figure>
 </section>
 
-<section id="programme-biosphere">
-    <article>
-        <h2>Programme Biosphère</h2>
-        <p class="text-hero">
-            Expérimenter un futur durable et désirable dans lequel les humains vivent en symbiose avec les autres espèces vivantes.</p>
-    <p>Au sein d'une nouvelle association « BIOSPHERE EXPERIENCE », nous concevons des habitats-écosystèmes combinant ces innovations low-techs les unes avec les autres.</p>
- 
-    </article>
-    </section>
+
 
 
     <section id="programme-biosphere">
@@ -50,9 +42,10 @@ layout: base.html
 
  <p>L'appartement, au coeur d'un écosystème d'une vingtaine d'acteurs de différents domaines : élevage de larves pour le recyclage des déchets organiques, culture de champignons et de plantes pour l'alimentation, production de biogaz pour la cuisine, supermarché participatif, ferme bio, etc. a permis de tester des pratiques prospectives pour réfléchir au futur des villes.</p>
  <div class="buttons-wrapper">
-<button class="button-primary">TUTOS</button>
-<button class="button-primary">Rapport expérimental</button>
-<button class="button-primary">Documentaire</button>
+    <a href="https://wiki.lowtechlab.org/wiki/Utilisateur:Biosphere_Experience" target="_blank" class="button-primary">TUTOS</a>
+    <a href="https://wiki.lowtechlab.org/wiki/Utilisateur:Biosphere_Experience" target="_blank" class="button-primary">Rapport expérimental</a>
+    <a href="https://wiki.lowtechlab.org/wiki/Utilisateur:Biosphere_Experience" target="_blank" class="button-primary">Documentaire</a>
+
 </div>
 </article>
 
@@ -64,7 +57,7 @@ layout: base.html
    
 <div class="post__grid-wrapper">
 
-    {% for post in collections.featured reversed %}
+    {% for post in collections.featured  %}
     <div class="post__card">
     <figure> <img class="post__featured-image" src=" {{ post.data.img }} " alt="" ></figure>
     <h3 class="post__title"><a href="{{ post.url }}"> {{ post.data.title }}</a></h3>
@@ -77,17 +70,17 @@ layout: base.html
 
 
 
-<section id="sciences-participatives">
-    <article class="border wide">
-        <article>
+<section id="sciences-participatives" class="border">
+    <article>
 <h2>Sciences participatives</h2>
 <h3>Nous avons lancé un programme de sciences participatives pour toutes celles et ceux souhaitant tester chez eux des systèmes et pratiques low-tech.</h3>
 <p>Alimentation, valorisation des déchets ou encore économie d'eau : les 8 missions low-tech abordent des thématiques d'actualité et ont été testées par de nombreuses personnes, partout en France et à l'étranger. Ces expériences citoyennes permettent de collecter un large panel de données techniques, sociologiques, ergonomiques, ou encore psychologiques sur la mise en place et l'usage de low-tech.</p>
 <h3>Plus de 650 expériences citoyennes ont été menées en France et à l'étranger !</h3>
 
-<a href="https://wiki.lowtechlab.org/wiki/Utilisateur:Biosphere_Experience" target="_blank"><button class="button-secondary">TUTOS</button></a>
+<a href="https://wiki.lowtechlab.org/wiki/Utilisateur:Biosphere_Experience" target="_blank" class="button-primary">TUTOS</a>
     </article>
-<article>
+
+    <article>
 <h2>Les missions</h2>
 <p>Les participants ont démarré les expériences début septembre. Pour celles et ceux ne faisant pas partie du programme, nous vous encourageons à continuer d'explorer les low-tech chez vous !</p>
 
@@ -102,6 +95,5 @@ layout: base.html
     <a class="mission__tag" href="">8 - Toilettes vivantes</a>
 
 </div>
-</article>
 </article>
 </section>
